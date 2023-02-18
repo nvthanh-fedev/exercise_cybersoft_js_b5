@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  box-shadow: none;
+  outline: none;
+}
+body {
+  transition: all 1s;
+  background-color: #e6eeff;
+}
+:root {
+  --hover-to-orange: #ff6e65;
+  --text-white: #ffffff;
+  --text-black: #000000;
+  --midnight-blue: #0d369f;
+  --box-shadow-dropmenu: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+  --top-nav-bg-color: #506ca5;
+  --site-nav-bg-color: #ffffff;
+  --site-nav-text-color: #09173a;
+  --site-nav-icon-color: #0d369f;
+  --course-bg-color: #f8f9ff;
+  --course-card-bg-color: #ffffff;
+  --course-card-title-card-color: #09173a;
+  --course-card-title-content-color: #b7b7b7;
+  --number-bg-color: #f8f9ff;
+  --number-text-color: #09173a;
+  --footer-top-bg-color: #ffffff;
+  --footer-top-title-color: #060606;
+  --footer-top-icon-color: #0d369f;
+  --footer-body-bg-color: #060e1f;
+  --btn-bg-back-to-top: #0d369f;
+  --navbar-toggler-bg: ;
+}
+
+img {
+  width: 100%;
+}
+a {
+  color: var(--dark);
+  transition: all 0.4s ease;
+  font-weight: 500;
+}
+a:hover {
+  color: var(--brand);
+}
+section {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#my-top-nav .top-nav {
+  background-color: var(--top-nav-bg-color);
+  color: #fff;
+  padding: 10px 15px;
+}
+#my-top-nav .top-nav p {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-right: 24px;
+  transition: all 0.5s;
+}
+#my-top-nav .top-nav p:hover {
+  color: var(--hover-to-orange);
+  cursor: pointer;
+}
+#my-top-nav .top-nav span,
+#my-top-nav .top-nav i {
+  font-size: 14px;
+  margin-right: 5px;
+  padding-bottom: 2px;
+  vertical-align: middle;
+}
+#my-top-nav .top-nav .social-icons a {
+  align-items: center;
+  border-radius: 100px;
+  color: #fff;
+  display: inline-flex;
+  height: 28px;
+  justify-content: center;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  width: 28px;
+}
+#my-top-nav .top-nav .social-icons a:hover {
+  color: var(--hover-to-orange);
+}
+nav#site-nav {
+  background-color: var(--site-nav-bg-color);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  width: 100%;
+}
+nav#site-nav .navbar-brand {
+  color: var(--site-nav-text-color);
+  font-size: 24px !important;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+nav#site-nav .navbar-brand img {
+  width: 150px;
+}
+nav#site-nav .navbar-brand:hover {
+  color: var(--hover-to-orange);
+}
+nav#site-nav .change-theme-max-width-991px {
+  display: none;
+}
+nav#site-nav .navbar-nav .nav-item {
+  padding: 0 12px;
+  text-align: center;
+}
+
+nav#site-nav .navbar-nav .nav-item button {
+  background-color: transparent;
+  border: none;
+}
+nav#site-nav .navbar-nav .nav-item button .nav-link {
+  color: var(--site-nav-text-color);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 0;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+nav#site-nav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--hover-to-orange);
+}
+nav#site-nav .navbar-nav .nav-item .nav-link.active {
+  color: var(--hover-to-orange);
+}
+nav#site-nav .navbar-nav .nav-item:nth-child(4) .dropdown button {
+  color: var(--site-nav-text-color);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 0;
+  text-transform: uppercase;
+}
+nav#site-nav .navbar-nav .nav-item:nth-child(4) .dropdown .dropdown-menu {
+  background: var(--course-card-bg-color);
+  border: 1px solid transparent;
+  box-shadow: var(--box-shadow-dropmenu);
+  transform: translateX(-50px);
+  transition: all 0.5s ease;
+}
+
+nav#site-nav .btn {
+  padding: 8px 15px;
+}
+
+nav#site-nav.scroll-effect {
+  padding: 5px;
+}
+.dark nav#site-nav .change-theme {
+  transition: all 0.5s ease;
+}
+.dark nav#site-nav .change-theme i:nth-child(1) {
+  display: none;
+}
+.dark nav#site-nav .change-theme i:nth-child(2) {
+  display: block;
+}
+
+.form-control:not(select) {
+  padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+  height: 52px;
+  padding-left: 0.5rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.container-fluid-section {
+  margin-top: 35px;
+  padding: 0px 200px;
+}

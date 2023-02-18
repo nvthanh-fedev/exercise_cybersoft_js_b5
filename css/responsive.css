@@ -1,0 +1,105 @@
+@media screen and (max-width: 1400px) {
+  .container-fluid-section {
+    margin-top: 50px;
+    padding: 0px 35px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-fluid-section {
+    margin-top: 45px;
+    padding: 0px 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .intro h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 20px 3px 5px 3px;
+  }
+  #my-top-nav {
+    display: none;
+  }
+  nav#site-nav {
+    padding: 5px 20px;
+  }
+  nav#site-nav .change-theme-max-width-991px {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0px 10px;
+  }
+  nav#site-nav .change-theme-max-width-991px i {
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 5px;
+    color: var(--top-nav-bg-color);
+  }
+  nav#site-nav .change-theme-max-width-991px i:hover {
+    color: var(--hover-to-orange);
+  }
+  nav#site-nav .change-theme-max-width-991px i:nth-child(1) {
+    display: block;
+  }
+  nav#site-nav .change-theme-max-width-991px i:nth-child(2) {
+    display: none;
+  }
+  nav#site-nav .navbar-toggler {
+    padding: 4px !important;
+    background-color: var(--top-nav-bg-color);
+    transition: all 0.5s;
+  }
+  nav#site-nav .navbar-toggler span.navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+    background: var(--top-nav-bg-color);
+    color: #ffffff;
+  }
+  nav#site-nav .navbar-toggler span.navbar-toggler-icon i {
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 0.5s;
+  }
+  nav#site-nav .navbar-toggler span.navbar-toggler-icon .bx-menu {
+    display: block;
+  }
+  nav#site-nav .navbar-toggler span.navbar-toggler-icon .bx-x {
+    display: none;
+  }
+  nav#site-nav .navbar-toggler .x.navbar-toggler-icon {
+    color: #ffffff;
+  }
+  nav#site-nav .navbar-toggler .x.navbar-toggler-icon .bx-menu {
+    display: none;
+  }
+  nav#site-nav .navbar-toggler .x.navbar-toggler-icon .bx-x {
+    display: block;
+  }
+  nav#site-nav .navbar-nav .nav-item button .nav-link {
+    text-align: center;
+  }
+
+  .container-fluid-section {
+    margin-top: 40px;
+    padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav#site-nav .navbar-brand img {
+    width: 180px;
+  }
+
+  .container-fluid-section {
+    margin-top: 35px;
+    padding: 0px 25px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container-fluid-section {
+    margin-top: 30px;
+    padding: 0px 20px;
+  }
+}

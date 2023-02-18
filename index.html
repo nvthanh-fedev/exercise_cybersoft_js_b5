@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google font -->
+  <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <!--Link font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>Bài tập JS - CyberSoft Academy</title>
+  <!-- icon logo -->
+  <link rel="icon" href="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png"
+    type="image/icon type" />
+  <!-- jquery -->
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" id="myBody">
+  <!-- start my-top-nav -->
+  <div id="my-top-nav">
+    <div class="top-nav">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-auto">
+            <p>Have any question ?</p>
+            <p><i class="fa-solid fa-signal"></i> +84 3456 67 107</p>
+            <p><i class="bx bxs-envelope"></i>nvthanh.fedev.0801@gmail.com</p>
+          </div>
+          <div class="col-auto social-icons">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end my-top-nav -->
+
+  <!-- start site-nav -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="site-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://cybersoft.edu.vn/wp-content/uploads/2017/04/MAX-OP1.png" alt="" />
+      </a>
+      <div class="d-flex">
+        <button id="switchCloseNavbarTogger" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="idNavbarTogger">
+            <i class="bx bx-menu"></i>
+            <i class="bx bx-x"></i>
+          </span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <button id="btn-nav-b1">
+              <a class="nav-link" href="#">Quản lý tuyển sinh</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="btn-nav-b2">
+              <a class="nav-link" href="#">Hóa đơn tiền điện</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="btn-nav-b3">
+              <a class="nav-link" href="#">Thuế thu nhập cá nhân</a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="btn-nav-b4">
+              <a class="nav-link" href="#">Tính tiền cáp</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end site-nav -->
+
+  <!-- start b1 student-managerment -->
+  <section class="student-managerment" id="section-student-managerment">
+    <div class="container-fluid container-fluid-section">
+      <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+          <h1>Quản lý tuyển sinh</h1>
+          <h5 class="font-italic text-muted mb-0">
+            Tra cứu kết quả tuyển sinh, nhập đầy đủ thông tin để biết kết quả
+            nhé.
+          </h5>
+          <img src="img/b1.png" alt="" class="img-fluid mb-3 d-none d-md-block" />
+        </div>
+        <!-- Quản lý truyển sinh Form -->
+        <div class="col-md-7 col-lg-6 ml-auto">
+          <form>
+            <div class="row">
+              <!-- điểm chuẩn -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b1-diem-chuan" placeholder="Nhập điểm chuẩn"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- Khu vực -->
+              <div class="input-group col-lg-6 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <select id="b1-khu-vuc" class="form-control custom-select bg-white border-left-0 border-md">
+                  <option value="X">Chọn khu vực</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                </select>
+              </div>
+
+              <!-- Đối tượng -->
+              <div class="input-group col-lg-6 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <select id="b1-doi-tuong" class="form-control custom-select bg-white border-left-0 border-md">
+                  <option value="0">Chọn đối tượng</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <!-- Điểm môn thứ nhất -->
+              <div class="input-group col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b1-diem-mon-1" placeholder="Điểm môn I "
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- Điểm môn thứ hai -->
+              <div class="input-group col-lg-4 mb-4 col-md-6 col-sm-12">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b1-diem-mon-2" placeholder="Điểm môn II"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- Điểm môn thứ 3 -->
+              <div class="input-group col-lg-4 mb-4 col-md-12 col-sm-12">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b1-diem-mon-3" placeholder="Điểm môn III"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- Nút b1 kết quả tuyển sinh -->
+              <div class="form-group col-lg-12 mx-auto mb-0">
+                <button id="b1-btn-ket-qua" href="#" class="btn btn-primary btn-block py-2">
+                  <span class="font-weight-bold">Kết quả</span>
+                </button>
+              </div>
+
+              <!-- Alert b1 hiển thị kết quả tuyển sinh -->
+              <div class="form-group col-lg-12 mx-auto mb-0 mt-4">
+                <div id="b1-alert-kq" class="alert alert-light" role="alert">
+                  Kết quả kỳ thi của bạn là:
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end student-managerment -->
+
+  <!-- Start b2 electricity-bill -->
+  <section id="section-electricity-bill" class="d-none">
+    <div class="container-fluid container-fluid-section">
+      <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+          <h1>Hóa đơn tiền điện</h1>
+          <h5 class="font-italic text-muted mb-0">
+            Tổng công ty Điện Lực Miền Nam Công ty Điện Lực Hồ Chí Minh
+          </h5>
+          <img src="img/b2.png" alt="" class="img-fluid mb-3 d-none d-md-block" />
+        </div>
+        <!-- Hóa đơn tiền điện Form -->
+        <div class="col-md-7 col-lg-6 ml-auto">
+          <form>
+            <div class="row">
+              <!-- Bài 2 Họ và tên -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b2-ho-va-ten" placeholder="Nhập họ và tên quý khách"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- Bài 2 Số kw -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b2-so-dien" placeholder="Nhập số kw" class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- Tính tiền điện -->
+              <div class="form-group col-lg-12 mx-auto mb-0">
+                <button id="b2-btn-ket-qua" href="#" class="btn btn-primary btn-block py-2">
+                  <span class="font-weight-bold">Tính tiền điện</span>
+                </button>
+              </div>
+
+              <!-- Alert hóa đơn tiền điện -->
+              <div class="form-group col-lg-12 mx-auto mb-0 mt-4">
+                <div id="b2-alert-kq" class="alert alert-light" role="alert">
+                  Tiền điện của quý khách là:
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End b2 -->
+
+  <!-- Start b3 personal-income-tax  -->
+
+  <section id="section-personal-income-tax" class="d-none">
+    <div class="container-fluid container-fluid-section">
+      <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+          <h1>Thuế thu nhập cá nhân</h1>
+          <h5 class="font-italic text-muted mb-0">
+            Đóng thuế TNCN góp phần bình ổn khoảng cách chênh lệch xã hội, tầng lớp giàu nghèo.
+          </h5>
+          <img src="img/b3.png" alt="" class="img-fluid mb-3 d-none d-md-block" />
+        </div>
+        <!-- Thuế thu nhập cá nhân form Form -->
+        <div class="col-md-7 col-lg-6 ml-auto">
+          <form>
+            <div class="row">
+              <!-- b3 họ và tên -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b3-ho-ten" placeholder="Nhập họ và tên quý khách"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- b3 tổng thu nhập một năm -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-dollar" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b3-tong-thu-nhap" placeholder="Tổng thu nhập một năm"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- b3 số người phụ thuộc -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b3-so-nguoi-phu-thuoc" placeholder="Số người phụ thuộc"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- b3 kết quả -->
+              <div class="form-group col-lg-12 mx-auto mb-0">
+                <button id="b3-btn-ket-qua" href="#" class="btn btn-primary btn-block py-2">
+                  <span class="font-weight-bold">Kết quả</span>
+                </button>
+              </div>
+
+              <!-- b3 thuế thu nhập cá nhân -->
+              <div class="form-group col-lg-12 mx-auto mb-0 mt-4">
+                <div id="b3-alert-kq" class="alert alert-light" role="alert">
+                  Thuế thu nhập cá nhân của quý khách là:
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start b4 network-cap-bill -->
+  <section id="section-network-cap-bill" class="d-none">
+    <div class="container-fluid container-fluid-section">
+      <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+          <h1>Hóa đơn tiền cáp</h1>
+          <h5 class="font-italic text-muted mb-0">
+            Hóa đơn tiền cáp của quý khách là
+          </h5>
+          <img src="img/b4.png" alt="" class="img-fluid mb-3 d-none d-md-block" />
+        </div>
+        <!-- Hóa đơn tiền cáp Form -->
+        <div class="col-md-7 col-lg-6 ml-auto">
+          <form>
+            <div class="row">
+              <!-- b4 loại khách hàng -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <select id="b4-loai-khach-hang" class="form-control custom-select bg-white border-left-0 border-md">
+                  <option value="X">Loại khách hàng</option>
+                  <option value="nhaDan">Nhà dân</option>
+                  <option value="doanhNghiep">Doanh nghiệp</option>
+                </select>
+              </div>
+
+              <!-- b4 mã khách hàng -->
+              <div class="input-group col-lg-12 mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b4-ma-khach-hang" placeholder="Nhập mã khách hàng"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- b4 số kênh cao cấp -->
+              <div class="input-group col-lg-12 mb-4 ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-plug" aria-hidden="true"></i>
+                    <i class="fa fa-plug" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b4-so-kenh-cao-cap" placeholder="Số kênh cao cấp"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!-- b4 số kết nối thông thường -->
+              <div class="input-group col-lg-12 mb-4 d-none" id="b4-input-cap-thuong">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white px-4 border-md border-right-0">
+                    <i class="fa fa-plug" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input id="b4-so-ket-noi" placeholder="Số kết nối thường"
+                  class="form-control bg-white border-left-0 border-md" />
+              </div>
+
+              <!--  -->
+              <div class="form-group col-lg-12 mx-auto mb-0">
+                <button id="b4-btn-ket-qua" href="#" class="btn btn-primary btn-block py-2">
+                  <span class="font-weight-bold">Kết quả</span>
+                </button>
+              </div>
+
+              <div class="form-group col-lg-12 mx-auto mb-0 mt-4">
+                <div id="b4-alert-kq" class="alert alert-light" role="alert">
+                  Hóa đơn tiền cáp của quý khách là:
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- script bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    // For Demo Purpose [Changing input group text on focus]
+    $(function () {
+      $("input, select").on("focus", function () {
+        $(this)
+          .parent()
+          .find(".input-group-text")
+          .css("border-color", "#80bdff");
+      });
+      $("input, select").on("blur", function () {
+        $(this)
+          .parent()
+          .find(".input-group-text")
+          .css("border-color", "#ced4da");
+      });
+    });
+  </script>
+
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 80 && $(window).width() > 991) {
+        $("#site-nav").addClass("scroll-effect");
+      } else {
+        $("#site-nav").removeClass("scroll-effect");
+      }
+    });
+  </script>
+  <!-- script lib -->
+  <script src="js/method.js"></script>
+  <!-- script lib -->
+  <script src="js/index.js"></script>
+  <!-- script changeSection -->
+  <script src="js/change.section.js"></script>
+</body>
+
+</html>

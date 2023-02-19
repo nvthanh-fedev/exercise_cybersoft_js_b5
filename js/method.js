@@ -236,19 +236,43 @@ function tinhThueThuNhapCaNhan(thuNhapChiuThue) {
   } else if (thuNhapChiuThue <= 60_000_000) {
     thue = thuNhapChiuThue * bac1;
   } else if (thuNhapChiuThue <= 120_000_000) {
-    thue = thuNhapChiuThue * bac2;
+    thue = 60_000_000 * bac1 + (thuNhapChiuThue - 60_000_000) * bac2;
   } else if (thuNhapChiuThue <= 210_000_000) {
-    thue = thuNhapChiuThue * bac3;
+    thue =
+      60_000_000 * bac1 +
+      120_000_000 * bac2 +
+      (thuNhapChiuThue - 120_000_000) * bac3;
   } else if (thuNhapChiuThue <= 384_000_000) {
-    thue = thuNhapChiuThue * bac4;
+    thue =
+      60_000_000 * bac1 +
+      120_000_000 * bac2 +
+      210_000_000 * bac3 +
+      (thuNhapChiuThue - 210_000_000) * bac4;
   } else if (thuNhapChiuThue <= 624_000_000) {
-    thue = thuNhapChiuThue * bac5;
+    thue =
+      60_000_000 * bac1 +
+      120_000_000 * bac2 +
+      210_000_000 * bac3 +
+      384_000_000 * bac4 +
+      (thuNhapChiuThue - 384_000_000) * bac5;
   } else if (thuNhapChiuThue <= 960_000_000) {
-    thue = thuNhapChiuThue * bac6;
+    thue =
+      60_000_000 * bac1 +
+      120_000_000 * bac2 +
+      210_000_000 * bac3 +
+      384_000_000 * bac4 +
+      624_000_000 * bac5 +
+      (thuNhapChiuThue - 624_000_000) * bac6;
   } else if (thuNhapChiuThue > 960_000_000) {
-    thue = thuNhapChiuThue * bac7;
+    thue =
+      60_000_000 * bac1 +
+      120_000_000 * bac2 +
+      210_000_000 * bac3 +
+      384_000_000 * bac4 +
+      624_000_000 * bac5 +
+      960_000_000 * bac6 +
+      (thuNhapChiuThue - 960_000_000) * bac7;
   }
-
   return thue;
 }
 
